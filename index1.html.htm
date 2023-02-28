@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WELCOME TO THE CLOSING CEREMONY</title>
+	<style>
+		body {
+			background-color: black;
+			color: yellow;
+		}
+
+		.container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			text-align: center;
+		}
+	</style>
+	<script>
+		function checkPassword() {
+			var password = document.getElementById("password").value;
+			if (password == "COMINGSOON") {
+				window.location.href = "file:///C:/Users/Xelium/Downloads/the%20folder/CLOSING%20CEREMONY/normal-page.html.htm"; // Change the protected page URL to the normal page URL
+			} else {
+				alert("INCORRECT PASSWORD. TRY AGAIN");
+			}
+		}
+	</script>
+</head>
+<body>
+	<audio src="file:///C:/Users/Xelium/Downloads/the%20folder/CLOSING%20CEREMONY/intro.mp3" autoplay></audio> <!-- Change "music.mp3" to the URL of your audio file -->
+	<div class="container">
+		<div>
+			<h1>WELCOME TO THE CLOSING CEREMONY</h1>
+			<p>ENTER PASSWORD:</p>
+			<input type="password" id="password">
+			<button onclick="checkPassword()">Submit</button>
+		</div>
+	</div>
+</body>
+</html>
